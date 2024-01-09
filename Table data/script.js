@@ -64,10 +64,10 @@ deleteBtn.addEventListener('click', () => {
     inputChecks.forEach((checkbox) => {
         if (checkbox.checked) {
             const id = checkbox.dataset.id;
-            const row = checkbox.parentNode.parentNode; // checkbox'un üstündeki <tr> satırını bul
-            row.parentNode.removeChild(row); // satırı tablodan kaldır
+            const row = checkbox.parentNode.parentNode; 
+            row.parentNode.removeChild(row); 
             const indexToRemove = selectedPosts.indexOf(id);
-            selectedPosts.splice(indexToRemove, 1); // seçilen gönderiyi listeden kaldır
+            selectedPosts.splice(indexToRemove, 1); 
         }
     });
 });
@@ -97,7 +97,6 @@ getBtn.addEventListener('click', async () => {
         const response = await fetch(url);
         const data = await response.json();
 
-        // Gönderilen veriler tabloda gösterilsin
         displayTableData(data.slice(0, 5));
  
 });
