@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -10,13 +10,42 @@
 
 <body>
     <div class="container">
-        <div class="search-box">
-            <input id="input" type="text" placeholder="Search for a cauntry...">
-            <button id="btn">Search</button>
+
+        <div class="header">
+            <h2>Where in the world?</h2>
+            <button class="mode">
+                <p>Light Mode</p><img src="./assets/icons/light.svg" alt="">
+            </button>
         </div>
+        <div class="search-box">
+            <div class="search">
+                <input id="input" type="text" placeholder="Search for a cauntry...">
+                <button id="btn">Search</button>
+            </div>
+            <div class="region-list">
+
+                <div class="list-head">
+                    <div>
+                        <p>Filter by Region</p>
+                    </div>
+                    <div><img id="arrow" src="./assets/icons/arrow-black.svg" alt=""></div>
+                </div>
+
+                <ul id="list">
+                    <li data-region="Africa">Africa</li>
+                    <li data-region="Americas">Americas</li>
+                    <li data-region="Asia">Asia</li>
+                    <li data-region="Europe">Europe</li>
+                    <li data-region="Oceania">Oceania</li>
+                </ul>
+                
+            </div>
+        </div>
+
+
         <div class="boxs-grid">
-            <!-- 
-            <div class="box">
+
+            <!-- <div class="box">
 
                 <div class="flag">
                     <img src="./assets/images/germany.jpg" alt="">
@@ -26,18 +55,29 @@
                         <h1>Germany</h1>
                     </div>
                     <div class="country-info">
-                        <div class="inf"><h4>Population: </h4><p class="pop">81,770,900</p></div>
-                        <div class="inf"><h4>Region: </h4><p class="reg">Europe</p></div>
-                        <div class="inf"><h4>Capital: </h4><p class="cap">Berlin</p></div>
+                        <div class="inf">
+                            <h4>Population: </h4>
+                            <p class="pop">81,770,900</p>
+                        </div>
+                        <div class="inf">
+                            <h4>Region: </h4>
+                            <p class="reg">Europe</p>
+                        </div>
+                        <div class="inf">
+                            <h4>Capital: </h4>
+                            <p class="cap">Berlin</p>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-             -->
+            </div> -->
+
         </div>
+
+
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ececec;
+}
+
+.container {
+    width: 100%;
+    background-color: #ececec;
+    justify-content: center;
+    align-items: center;
+    width: 1120px;
+    margin: 0 auto;
+
+}
+
+.flag img {
+    width: 340px;
+    height: 240px;
+}
+
+.header {
+    background: white;
+    border-bottom: 1px solid #00000046;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 50px;
+}
+
+.header .mode {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    color: #000;
+    transition: color 0.3s, border-color 0.3s;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dark .header .mode {
+    color: white;
+}
+
+.mode img {
+    width: 24px;
+    height: 24px;
+}
+
+.main {
+    margin: 72px 0;
+    padding: 0 50px;
+}
+
+.main button {}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 18px 5px 14px;
+    margin-bottom: 72px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.288);
+    border-radius: 5px;
+
+}
+
+
+.back img {
+    width: 18px;
+    height: 18px;
+}
+
+.info-flag {
+    display: flex;
+    gap: 100px;
+}
+
+.countrie-data {}
+
+.countrie-data {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+}
+
+.countrie-data li {
+    display: flex;
+    gap: 5px;
+}
+
+.countrie-data li {
+    font-weight: 500;
+}
+
+.countrie-data li p {
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.countrie {}
+
+.border-countries {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.border-countries h5 {
+    margin-right: 14px;
+}
+
+.border-countries button {
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.342);
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+
+
+
+.dark body {
+    background-color: #283139;
+    color: white;
+
+}
+
+.dark .container {
+    background-color: #283139;
+}
+
+.dark .header {
+    background-color: #313944;
+}
+
+.dark .back{
+    color: white;
+    background-color: #313944;
+}
+
+.dark .border-countries button{
+    color: white;
+    background-color: #313944;
+}
+
+
+
+.header .mode img {
+    transition: transform 0.8s ease;
+}
+
+.header .mode p {
+    transition: transform 0.8s ease;
+}
+
+.dark .header .mode p {
+    transform: translateX(54px);
+}
+
+.dark .header .mode img {
+    transform: translateX(-54px);
+}
